@@ -1,9 +1,9 @@
 from flask import jsonify
 
-def rest_response(message: str):
+def rest_response(obj):
     return jsonify({
         "status": "OK",
-        "result": message
+        "result": obj
     })
 
 def rest_error(message: str):
