@@ -2,6 +2,7 @@ from flask import Flask
 from helpers import rest_response, rest_error
 
 app = Flask(__name__)
+app.json.sort_keys = False
 
 def is_a_number(s):
     try:
